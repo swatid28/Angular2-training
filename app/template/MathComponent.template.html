@@ -1,0 +1,17 @@
+<h1>New Math Calculator</h1>
+                <div class="content">
+					<div class="field"><label for="">Number 1 : </label><input type="number" [(ngModel)]="calculator.number1" name=""></div><br>
+					<div class="field"><label for="">Number 2 : </label><input type="number" [(ngModel)]="calculator.number2" name=""></div><br>
+					<select [(ngModel)]="operation" (change)='calculate()'>
+                        <option value=""></option>
+                        <option value="add">Add</option>
+                        <option value="subtract">Subtract</option>
+                        <option value="multiply">Multiply</option>
+                        <option value="divide">Divide</option>
+                    </select>
+                    
+                    <div class="field">
+						<div>Result : {{calculator.result}}</div>
+					</div>
+					<hr>
+				</div>
